@@ -23,7 +23,7 @@ const initializeDatabase = async () => {
         )
     `);
 
-    console.log("✅ Projects table ready");
+    console.log(" Projects table ready");
 };
 
 module.exports = {
