@@ -21,19 +21,19 @@ const PORT = process.env.PORT || 8000;
 // start application properly
 (async () => {
     try {
-        // 1️⃣ Test DB connection
+        //  Test DB connection
         await pool.query("SELECT 1");
-        console.log("✅ DB Connected");
+        console.log(" DB Connected");
 
-        // 2️⃣ Create table if not exists
+        //  Create table if not exists
         await initializeDatabase();
 
-        // 3️⃣ Start server
+        //  Start server
         app.listen(PORT, () => {
-            console.log(`🚀 Server running on port ${PORT}`);
+            console.log(` Server running on port ${PORT}`);
         });
 
     } catch (error) {
-        console.error("❌ Failed to start application:", error);
+        console.error(" Failed to start application:", error);
     }
 })();
